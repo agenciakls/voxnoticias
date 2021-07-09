@@ -1,0 +1,11 @@
+.section-ads {
+    margin: 15px auto;
+    .box-ads {
+        background-color: $corGrayPrincipal;
+        .img-ads {
+            display: block;
+            width: 70% !important;
+            margin: 0px auto;
+        }
+    }
+}

@@ -1,0 +1,263 @@
+header {
+	position: relative;
+	height: 56px;
+	z-index: 100;
+	.header-area {
+		background-color: $corPrincipal;
+		padding: 8px 0px;
+		width: 100%;
+		&.fixed {
+			top: 0px;
+			position: fixed;
+			box-shadow: 0px 0px 2px #999;
+		}
+		.header-main {
+			z-index: 2;
+		}
+		.header-container {
+			display: flex;
+			justify-content: space-between;
+			.logo {
+				flex-grow: 8;
+				text-align: center;
+				img {
+					
+					height: 40px;
+					margin: 0px auto;
+					display: inline-block;
+				}
+			}
+			nav {
+				float: right;
+				ul.header-menu {
+					display: flex;
+					margin: 0px !important;
+					li {
+						padding: 30px 20px;
+						font-weight: 500;
+						font-size: 18px;
+						font-weight: 700;
+						a {
+							color: $corPrincipal;
+						}
+					}
+				}
+			}
+			.header-search {
+				flex: 1;
+			}
+			.nav-button {
+				flex: 1;
+				color: $corBranco;
+				background-color: $corTerceira;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 8px 18px;
+				text-transform: uppercase;
+				border-radius: 5px;
+				.disable {
+					display: none;
+				}
+				.menu {
+					margin: 0px 5px;
+				}
+			}
+			
+			.search-show {
+				background-color: $corPrincipalEscura;
+				padding: 5px 20px;
+				margin: 0px;
+			}
+		}
+	}
+}
+section.content-title {
+	background-color: $corGrayPrincipal;
+    padding: 15px 0px;
+    h1 {
+    	font-size: 26px;
+    	color: $corPrincipal;
+	    font-weight: 500;
+	    text-transform: uppercase;
+    }
+}
+@media screen and (max-width: $xsWidth) {
+	header {
+		.header-area {
+			height: 65px;
+			padding: 10px 0px;
+			.header-background {
+				opacity: 1;
+			}
+			
+			.header-search {
+				display: none;
+				&.active {
+					display: block;
+					position: fixed;
+					top: 0px;
+					left: 0px;
+					background: $corPrincipal;
+					width: 100%;
+					height: 100%;
+					margin: 0px;
+					padding: 55px 15px;
+				}
+				.header-search-autosuggest {
+					position: relative;
+					top: 0px;
+					width: 100%;
+					.content-autosuggest {
+						display: block;
+						position: absolute;
+						margin: 25px 0px;
+						background-color: #f5f6fa;
+						padding: 15px 20px;
+						right: 0px;
+						width: 100%;
+						border-radius: 10px;
+					}
+				}
+				.search-close {
+					display: block;
+					position: fixed;
+					width: auto;
+					top: 5px;
+					right: 30px;
+				}
+			}
+			.header-search {
+				display: none;
+			}
+			.header-container {
+				.nav-button {
+					padding: 5px 12px;
+					.menu {
+						display: none;
+					}
+				}
+				.logo {
+					img {
+						height: 25px;
+						margin: 8px auto;
+					}
+				}
+				.search-show {
+					padding: 5px 15px;
+				}
+			}
+		}
+	}
+	section.content-title {
+	    h1 {
+	    	font-size: 23px;
+	    	text-align: center;
+	    }
+	}
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+	header { 
+		.header-area {
+			height: 65px;
+			padding: 10px 0px;
+			.header-background {
+				opacity: 1;
+			}
+			nav {
+				display: none;
+			}
+			.header-search {
+				display: none;
+				&.active {
+					display: block;
+					position: fixed;
+					top: 0px;
+					left: 0px;
+					background: $corPrincipal;
+					width: 100%;
+					height: 100%;
+					margin: 0px;
+					padding: 55px 15px;
+				}
+				.header-search-autosuggest {
+					position: relative;
+					top: 0px;
+					width: 100%;
+					.content-autosuggest {
+						display: block;
+						position: absolute;
+						margin: 25px 0px;
+						background-color: #f5f6fa;
+						padding: 15px 20px;
+						right: 0px;
+						width: 100%;
+						border-radius: 10px;
+					}
+				}
+				.search-close {
+					display: block;
+					position: fixed;
+					width: auto;
+					top: 5px;
+					right: 30px;
+				}
+			}
+			.header-container {
+				.nav-button {
+					.menu {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	section.content-title {
+	    h1 {
+	    	font-size: 32px;
+	    	text-align: center;
+	    }
+	}
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
+	header { 
+		height: 56px;
+		.header-area {
+			.logo {
+				img {
+					padding: 7px 10px;
+				}
+			}
+			nav {
+				ul.header-menu {
+					li {
+						padding: 30px 10px;
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+	section.content-title {
+	    h1 {
+	    	font-size: 35px;
+	    }
+	}
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+	header { 
+		.header-area {
+			nav {
+				ul.header-menu {
+					li {
+						padding: 30px 15px;
+						font-size: 19px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: $xlWidth) {
+	
+}

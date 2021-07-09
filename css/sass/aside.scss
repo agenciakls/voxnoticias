@@ -1,0 +1,22 @@
+.box-aside {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    .list-aside {
+        .box-articles {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 15px 0px;
+            .img-box {
+                img {
+                    border-radius: 7px;
+                    width: 100%;
+                }
+            }
+            .content {
+                color: $corPrincipal;
+                padding: 0px 15px;
+                font-size: 14px;
+            }
+        }
+    }
+}

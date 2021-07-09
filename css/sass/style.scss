@@ -1,0 +1,44 @@
+/* Cores do Tema */
+// $corPrincipal: #ee2924;
+$corPrincipal: #011E58;
+$corPrincipalEscura: #00143d;
+$corPrincipalEscuraDark: #000b22;
+$corSecundaria: #7796F1;
+$corSecundariaEscura: #7796F1;
+$corTerceira: #1251D4;
+$corTerceiraEscura: #0b399e;
+$corBranco: #ffffff;
+$corText: #292929;
+$corGrayPrincipal: #ededed;
+
+/* Tamanho das Telas */
+$xsWidth: 576px;
+$smWidth: 576px;
+$mdWidth: 768px;
+$lgWidth: 992px;
+$xlWidth: 1200px;
+
+/*Tamanho dos Textos */
+$xsTextMenu: 20px;
+
+@import 'classes';
+
+@import 'pre-header';
+@import 'header';
+@import 'header-bar';
+@import 'header-search';
+@import 'menu';
+@import 'icons';
+@import 'fonts';
+@import 'aside';
+@import 'ads';
+
+@import 'index';
+@import 'index-banner';
+@import 'index-news';
+@import 'index-articles';
+
+@import 'page-contact';
+@import 'page-colunistas';
+
+@import 'footer';
