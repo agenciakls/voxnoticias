@@ -24,10 +24,6 @@
 	gtag('config', 'G-CLKKBPK585');
 	</script>
 	<link rel="shortcut icon" type="image/x-icon" href="http://localhost/agenciakls/voxnoticias/wp-content/uploads/2021/04/cropped-favicon-32x32.png"> 
-	<!-- Global site tag (gtag.js) - Google Ads: 824599583 -->
-	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-824599583"></script>
-	<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-824599583'); </script> -->
-
 	<!-- Facebook Pixel Code -->
 	<script>
 	!function(f,b,e,v,n,t,s)
